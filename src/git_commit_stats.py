@@ -30,7 +30,7 @@ def get_commits(since=None, until=None, ignore_list=[]):
         print("git log 执行失败")
         return [], {}
 
-    raw_data = result.stdout.Splitlines()
+    raw_data = result.stdout.splitlines()
     email_to_name = {}
     email_counts = Counter()
 
